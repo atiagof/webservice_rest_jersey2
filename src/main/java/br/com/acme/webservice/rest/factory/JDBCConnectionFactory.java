@@ -18,7 +18,7 @@ public class JDBCConnectionFactory {
 			Connection connection = null;
 
 			Class.forName("org.postgresql.Driver");
-			connection = DriverManager.getConnection("jdbc:postgresql://nt1924:5433/epdv", "postgres","postgres");
+			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5433/api", "postgres","postgres");
 			LOG.info("Open connection successfuly");
 			return connection;
 		} catch (Exception e) {
